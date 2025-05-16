@@ -1,6 +1,9 @@
+[![CI](https://github.com/crimpdeq/book/actions/workflows/ci.yml/badge.svg)](https://github.com/crimpdeq/book/actions/workflows/ci.yml)
+[![Documentation](https://img.shields.io/badge/Documentation-Book-orange.svg)](https://crimpdeq.github.io/book/)
+
 # Crimpdeq Book
 
-This repository contains the source of the ["Crimpdeq" book](https://crimdpeq.github.io/crimpdeq/).
+This repository contains the source of the ["Crimpdeq" book](https://crimpdeq.github.io/book/).
 
 ## Quickstart
 

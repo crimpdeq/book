@@ -67,11 +67,11 @@
    1. Connect your device with a USB-C cable.
    2. Pull the `crimpdeq` repository:
         ```bash
-        git clone https://github.com/SergioGasquez/crimpdeq.git
+        git clone https://github.com/crimpdeq/crimpdeq-firmware
         ```
         If you don't have git installed on your system, you can go to the green Code button and use the "Download ZIP" option.
    3. Upload the firmware to your device:
-      1. Download the binary from the desired [GitHub release](https://github.com/SergioGasquez/crimpdeq/releases).
+      1. Download the binary from the desired [GitHub release](https://github.com/crimpdeq/crimpdeq-firmware/releases).
       2. Open [esp.huhn.me](https://esp.huhn.me/).
       3. Click Connect and select the serial port of your ESP board.
       4. Upload your .bin file(s).

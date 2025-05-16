@@ -32,7 +32,7 @@ DEFMT_LOG=debug cargo run --release
 ```
 
 ### Flashing From Your Browser
-This method does not require any of the [Prerequisites](#prerequisites), but also it does not allow modifying the code. Instead, it only allows flashing a [released firmware version](https://github.com/SergioGasquez/crimpdeq/releases).
+This method does not require any of the [Prerequisites](#prerequisites), but also it does not allow modifying the code. Instead, it only allows flashing a [released firmware version](https://github.com/crimpdeq/crimpdeq-firmware/releases).
 
 To flash the released binary using your browser:
 1. Download the binary from the desired GitHub release
