@@ -31,6 +31,8 @@ To modify the [log level](https://defmt.ferrous-systems.com/filtering), update t
 DEFMT_LOG=debug cargo run --release
 ```
 
+> ⚠️ **Note**:  If you're using a different DevKit that doesn't include USB-Serial-JTAG, you'll need to flash the device via UART. This requires updating the custom runner in `.cargo/config.toml` and using [`espflash`](https://github.com/esp-rs/espflash/tree/main/espflash#cargo-runner) instead of `probe-rs`.
+
 ### Flashing From Your Browser
 This method does not require any of the [Prerequisites](#prerequisites), but also it does not allow modifying the code. Instead, it only allows flashing a [released firmware version](https://github.com/crimpdeq/crimpdeq-firmware/releases).
 
