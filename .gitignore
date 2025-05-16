@@ -1,0 +1,10 @@
+# mdBook
+book
+.vale.ini
+.vale
+
+# macOS
+.DS_Store
+
+# Cursor
+.cursor/rules/rust-verification.mdc
