@@ -1,6 +1,6 @@
 # Crimpdeq Book
 
-This repository contains the source of the "Crimpdeq" book.
+This repository contains the source of the ["Crimpdeq" book](https://crimdpeq.github.io/crimpdeq/).
 
 ## Quickstart
 
@@ -17,5 +17,11 @@ cd book/
 mdbook serve
 ```
 
+## Content
 
-
+- Introduction: What is Crimpdeq?
+- Making your own Crimpdeq
+- How to calibrate your Crimpdeq
+- Charging the Battery
+- Firmware Details
+- PCB Details
