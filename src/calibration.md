@@ -35,8 +35,10 @@ This guide will help you calibrate your Crimpdeq device to ensure accurate weigh
    4. Prepare the calibration command:
       - Take your hex value from the previous step.
       - Add `73` at the beginning.
-       **Example:** For 75.3 kg (0x4296999a), the command would be: `734296999a`.
-   5. Send this new command to the same characteristic (`7e4e1703-1ea6-40c9-9dcc-13d34ffead57`).
+
+         **Example:** For 75.3 kg (0x4296999a), the command would be: `734296999a`.
+      > ⚠️ **Note**:  Some scales require sending the command in grams instead of kilograms. Im still investigating this, but if after calibrating the device, the weight looks like divided by 100, try sending the command in grams.
+   1. Send this new command to the same characteristic (`7e4e1703-1ea6-40c9-9dcc-13d34ffead57`).
 
 ## Important Notes
 - The known weight should be greater than the maximum weight you plan to measure.

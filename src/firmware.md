@@ -19,6 +19,15 @@ cargo build --release
 To build and upload the firmware to your device, refer to the [Build and Flash your Device](#build-and-flash-your-device) section.
 
 ## How to Flash your Device
+
+### Erase your Device Memory
+If you used the device for other projects, you need to erase the memory of the device:
+```bash
+probe-rs erase
+```
+
+This only needs to be done once, after that, you should only flash the firmware without erasing the memory. Otherwise, you will lose your [calibration values](./calibration.md).
+
 ### Build and Flash your Device
 Since we've set a [custom runner](https://doc.rust-lang.org/cargo/reference/config.html#targettriplerunner) in the `.cargo/config.toml`, you can build and upload the resulting binary to your target using:
 ```bash
