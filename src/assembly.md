@@ -8,7 +8,9 @@
       - Other batteries might also work, as long as they can power the device
     - [Crane Scale](https://es.aliexpress.com/item/1005002719645426.html?spm=a2g0o.order_list.order_list_main.17.4779194d1mFZpd&gatewayAdapt=glo2esp) or [Amazon alternative](https://www.amazon.es/dp/B08133JCM6)
       - Other crane-scales might also work
-    - [HX711](https://www.amazon.es/dp/B0DJX8BPQL)
+    - HX711:
+      - [Amazon](https://www.amazon.es/dp/B0DJX8BPQL)
+      - [AliExpress](https://a.aliexpress.com/_mPDaqUZ)
 2. Disassemble the Crane Scale
     ![Disassembly](assets/crane_dissasembly.png)
     1. Desolder the battery connections.
@@ -20,11 +22,11 @@
        1. Update the sample rate: Most HX711 modules come with the `RATE` pin connected to `GND`, meaning that they sample at 10 Hz, if you want to sample at 80 Hz:
            ![HX711 Pinout](assets/hx711_pinout.png)
           1. Break the track of `RATE` pin.
-          1. I did this by scratching the module with a knife.
-          2. Verify with a multimeter that `GND` and the `RATE` pin are not connected anymore.
+          2. I did this by scratching the module with a knife.
+          3. Verify with a multimeter that `GND` and the `RATE` pin are not connected anymore.
             - Make sure that you don't break the next connection.
-          3. Solder the `RATE` to `DVDD` pin.
-          4. Verify with a multimeter.
+          4. Solder the `RATE` to `DVDD` pin.
+          5. Verify with a multimeter.
        2. Optimize the measurements for 3.3V: Most HX711 modules come with a setup for 5V, if you want to optimize the measurements for 3.3V:
           1. Connect, in parallel, a resistor between 20k and 27k to `R1`. `R1` is the highlighted resistor in the image:
           ![Resistor to modify](assets/hx711_resistor.jpg)
