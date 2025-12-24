@@ -11,6 +11,9 @@
     - HX711:
       - [Amazon](https://www.amazon.es/dp/B0DJX8BPQL)
       - [AliExpress](https://a.aliexpress.com/_mPDaqUZ)
+    - [Optional] Resistors
+      - 33kOhm
+      - 10kOhm
 2. Disassemble the Crane Scale
     ![Disassembly](assets/crane_dissasembly.png)
     1. Desolder the battery connections.
@@ -54,7 +57,11 @@
 
      ![ESP32-C3 Connections](assets/esp32c3_connections.png)
 
-    4. Verify all the connections with a multimeter.
+    4. [Optional] Sodler the voltage divider:
+       1. Solder one end of the 33kOhm resistor to the `B+` pin on the ESP32-C3-DevKit-RUST-1.
+       2. Join the other end of the 33kOhm resistor and one end of the 10kOhm resistor together, and connect that junction to `GPIO1` on the ESP32-C3-DevKit-RUST-1.
+       3. Solder the remaining end of the 10kOhm resistor to `GND`.
+    5. Verify all the connections with a multimeter.
 4. Adapt the Scale Case:
    1. Create space for the USB connector.
        - I did this by placing the devkit, marking the space that I needed with a pen and then, heating a knife and melting the case.
@@ -85,7 +92,3 @@
       2. Use the "Live View" option.
       3. Measure a known weight and verify that Crimpdeq measures the right value.
          1. If Crimpdeq calibration is off, see the [Calibration chapter](calibration.md).
-
-
-
-
