@@ -1,10 +1,10 @@
 # Crimpdeq
 
-Meet Crimpdeq, an open source alternative to [Tindeq Progressor](https://tindeq.com/product/progressor/), that works with [Tindeq](https://tindeq.com/) and [ClimbHarder](https://climbharder.net/) apps!
+Meet Crimpdeq, an open‑source force guauge like [Tindeq Progressor](https://tindeq.com/product/progressor/), that works with the [Tindeq](https://tindeq.com/) and [Frez](https://www.frez.app/) apps.
 
-The project relies on an ESP32-C3 and uses a HX711 to get the measurements from the crane scale. For more details, see the [Firmware](./firmware.md) chapter.
+The project relies on an ESP32‑C3 and uses an HX711 to get measurements from the crane scale. For more details, see the [Firmware](./firmware.md) chapter.
 
-PCB is finished but has not been manufactured yet, hence, it's not tested.
+The PCB is finished but has not been manufactured yet; therefore it’s untested.
 
 ## Specs
 

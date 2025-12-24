@@ -28,3 +28,7 @@ mdbook serve
 - Charging the Battery
 - Firmware Details
 - PCB Details
+
+## Contributing
+- Fixes and improvements are welcome. Please open an issue or submit a pull request.
+- For small text changes, you can edit pages directly via the “Edit this page” link (when available) or by editing files under `src/` and running `mdbook serve` to preview.

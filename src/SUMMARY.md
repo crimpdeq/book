@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](./introduction.md)
-- [Making your own Crimpdeq](./assembly.md)
+- [Making Your Own Crimpdeq](./assembly.md)
 - [Calibration](./calibration.md)
 - [Charging the Battery](./battery.md)
 - [Firmware](./firmware.md)

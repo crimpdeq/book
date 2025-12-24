@@ -10,6 +10,9 @@ To build and upload the firmware to your device, ensure you have the following i
   rustup toolchain install stable --component rust-src --target riscv32imc-unknown-none-elf
   ```
 - [`probe-rs`](https://probe.rs/) installed, see [instructions](https://probe.rs/docs/getting-started/installation/)
+- OS notes:
+  - Linux: set up udev rules for your debug probe or USB‑Serial device (see [`probe-rs` udev guide](https://probe.rs/docs/getting-started/installation/#udev-rules)).
+  - Windows/macOS: ensure the correct USB drivers are installed and select the appropriate serial port in your tooling.
 
 ## How to Build
 To build the firmware, run:

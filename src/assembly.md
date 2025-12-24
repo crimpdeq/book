@@ -3,14 +3,14 @@
 1. Required Materials
     - [ESP32-C3-DevKit-RUST-1](https://github.com/esp-rs/esp-rust-board?tab=readme-ov-file#where-to-buy)
         - Other ESP32 devices can be used, but you need to figure out how to charge the battery
-    - [Battery Holder](https://es.aliexpress.com/item/1005006283753220.html?spm=a2g0o.order_list.order_list_main.5.4779194d1mFZpd&gatewayAdapt=glo2esp)
-    - [18650 Battery](https://es.aliexpress.com/item/1005007923191656.html?spm=a2g0o.order_list.order_list_main.11.4779194d1mFZpd&gatewayAdapt=glo2esp)
-      - Other batteries might also work, as long as they can power the device
-    - [Crane Scale](https://es.aliexpress.com/item/1005002719645426.html?spm=a2g0o.order_list.order_list_main.17.4779194d1mFZpd&gatewayAdapt=glo2esp) or [Amazon alternative](https://www.amazon.es/dp/B08133JCM6)
+    - [Battery Holder](https://www.aliexpress.com/item/1005006283753220.html)
+    - [18650 Battery](https://www.aliexpress.com/item/1005007923191656.html)
+          - Other batteries might also work, as long as they can power the device
+    - [Crane Scale](https://www.aliexpress.com/item/1005002719645426.html) or [Amazon alternative](https://www.amazon.es/dp/B08133JCM6)
       - Other crane-scales might also work
     - HX711:
       - [Amazon](https://www.amazon.es/dp/B0DJX8BPQL)
-      - [AliExpress](https://a.aliexpress.com/_mPDaqUZ)
+      - [AliExpress](https://www.aliexpress.com/wholesale?SearchText=HX711+module)
     - [Optional] Resistors
       - 33kOhm
       - 10kOhm
@@ -25,7 +25,7 @@
        1. Update the sample rate: Most HX711 modules come with the `RATE` pin connected to `GND`, meaning that they sample at 10 Hz, if you want to sample at 80 Hz:
            ![HX711 Pinout](assets/hx711_pinout.png)
           1. Break the track of `RATE` pin.
-          2. I did this by scratching the module with a knife.
+          2. This can be done by carefully scratching the module’s trace with a knife.
           3. Verify with a multimeter that `GND` and the `RATE` pin are not connected anymore.
             - Make sure that you don't break the next connection.
           4. Solder the `RATE` to `DVDD` pin.
@@ -45,7 +45,7 @@
         | S+            | S+ (Green)        | Signal positive (from load cell)   |
         | S-            | S- (White)        | Signal negative (from load cell)   |
 
-        - Note that sometimes the `S` pins are referred as `A`.
+        - Note that on some HX711 modules the `S+`/`S-` pins are labeled `A+`/`A-`.
     3. Connect the HX711 to the ESP32-C3-DevKit-RUST-1 devkit:
 
      | **HX711 Pin** | **ESP32-C3 Pin** | **Description**                |
@@ -57,10 +57,11 @@
 
      ![ESP32-C3 Connections](assets/esp32c3_connections.png)
 
-    4. [Optional] Sodler the voltage divider:
+    4. [Optional] Solder the voltage divider:
        1. Solder one end of the 33kOhm resistor to the `B+` pin on the ESP32-C3-DevKit-RUST-1.
        2. Join the other end of the 33kOhm resistor and one end of the 10kOhm resistor together, and connect that junction to `GPIO1` on the ESP32-C3-DevKit-RUST-1.
        3. Solder the remaining end of the 10kOhm resistor to `GND`.
+       - The firmware expects the battery sense on `GPIO1` by default; adjust the firmware configuration if you wire a different pin.
     5. Verify all the connections with a multimeter.
 4. Adapt the Scale Case:
    1. Create space for the USB connector.
