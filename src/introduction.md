@@ -12,7 +12,7 @@ Meet Crimpdeq, a portable digital force sensor designed for climbers, coaches, a
 - Open-source PCB design
 - Automatic sleep when inactive
 - Compatible with Tindeq Progressor app ([Android](https://play.google.com/store/apps/details?id=com.progressor&hl=es_419) | [iOS](https://apps.apple.com/es/app/tindeq-progressor/id1380412428))
-- Compatible with Frez app (formerly ClimbHarder) app ([Android](https://play.google.com/store/apps/details?id=com.holdtight.climbharder&pcampaignid=web_share) | [iOS](https://apps.apple.com/us/app/climbharder-no-hang-training/id6730120024))
+- Compatible with Frez app (formerly ClimbHarder) ([Android](https://play.google.com/store/apps/details?id=com.holdtight.climbharder&pcampaignid=web_share) | [iOS](https://apps.apple.com/us/app/climbharder-no-hang-training/id6730120024))
 - Sampling frequency: 80 Hz
 - Design load: 1500 N (≈150 kg), full scale
 - Precision:
